@@ -1,0 +1,14 @@
+<mat-form-field floatLabel="always">
+  <mat-label>USER.REGISTER.PHONE_NUMBER</mat-label>
+  <input
+    [imask]="telephoneMask"
+    unmask="typed"
+    [formControl]="phoneNumberControl"
+    matInput
+    name="phoneNumber"
+    required
+    type="text"
+    id="imask-phonenumber"
+  />
+</mat-form-field>
+<pre>FormControl value: {{phoneNumberControl?.value}}</pre>
